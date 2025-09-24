@@ -39,6 +39,8 @@ const listaStudenti = [stud1, stud2, stud3];
 listaStudenti.forEach(studente => {
     const nome = studente.nome;
     const media = studente.calcolaMedia();
-    console.log(`Nome: ${nome}`);
-    console.log(`Media: ${media}`);
+    console.log(`Nome: ${nome} - Media: ${media}`);
+    console.log('-------------------');
 });
+
+console.log("Esecuzione completata.");

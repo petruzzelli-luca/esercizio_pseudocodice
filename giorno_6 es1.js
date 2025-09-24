@@ -7,10 +7,10 @@ const rl = readline.createInterface({
 });
 
 rl.question("Inserisci il valore per A: ", (inputA) => {
-  const A = parseInt(inputA);
+  let A = parseInt(inputA);
   
   rl.question("Inserisci il valore per B: ", (inputB) => {
-    const B = parseInt(inputB);
+    let B = parseInt(inputB);
 
     if (isNaN(A) || isNaN(B)) {
       console.log("Input non valido. Assicurati di inserire solo numeri.");
@@ -18,7 +18,6 @@ rl.question("Inserisci il valore per A: ", (inputA) => {
       console.log(`Valore iniziale di A: ${A}`);
       console.log(`Valore iniziale di B: ${B}`);
 
-      const oldA = A;
       A = A + B;
       B = A - B;
       A = A - B;
